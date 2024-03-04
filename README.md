@@ -23,11 +23,30 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+model.py
+```
 
-Include your code here
+from django.db import models
+from django.contrib import admin
+class Library_DB(models.Model):
+    serial=models.IntegerField(primary_key=True);
+    title=models.CharField(max_length=20);
+    author=models.CharField(max_length=20);
+    publishion=models.CharField(max_length=20);
+    price=models.IntegerField();
+class Library_DBAdmin(admin.ModelAdmin):
+    list_display=("serial","title","author","price");
+```
+admin.py
+```
+from django.contrib import admin
+from .models import Library_DB,Library_DBAdmin
+admin.site.register(Library_DB,Library_DBAdmin)
+```
+
 
 ## OUTPUT
-
+![output](./Screenshot%202024-02-28%20094257.png)
 Include the screenshot of your admin page.
 
 
