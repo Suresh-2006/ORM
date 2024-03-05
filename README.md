@@ -44,7 +44,8 @@ admin.site.register(Library_DB,Library_DBAdmin)
 
 
 ## OUTPUT
-![output](./Screenshot%202024-02-28%20094257.png)
+![Screenshot 2024-03-05 112235](https://github.com/Suresh-2006/ORM/assets/149347611/b5ec93ce-7a23-41fe-86cf-a1e02f132eb8)
+
 
 
 ## RESULT
